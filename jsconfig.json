@@ -1,0 +1,43 @@
+{
+  "compilerOptions": {
+    "baseUrl": "./",
+    "paths": {
+      "AppAssets/*": ["./src/assets/*"],
+      "AppTheme": ["./src/theme/index.ts"],
+      "AppTheme/*": ["./src/theme/*"],
+      "AppFirebase": ["./src/firebase/index.ts"],
+      "AppFirebase/*": ["./src/firebase/*"],
+      "AppNetwork": ["./src/network/index.ts"],
+      "AppNetwork/*": ["./src/network/*"],
+      "AppUtils": ["./src/utils/index.tsx"],
+      "AppUtils/*": ["./src/utils/*"],
+      "AppConstants": ["./src/constants/index.tsx"],
+      "AppConstants/*": ["./src/constants/*"],
+      "AppComponents": ["./src/components/index.tsx"],
+      "AppComponents/*": ["./src/components/*"],
+      "AppNavigation": ["./src/navigation/index.tsx"],
+      "AppNavigation/*": ["./src/navigation/*"],
+      "AppContainers": ["./src/containers/index.tsx"],
+      "AppContainers/*": ["./src/containers/*"],
+      "AppActions": ["./src/actions/index.tsx"],
+      "AppActions/*": ["./src/actions/*"],
+      "AppReducers": ["./src/reducers/index.tsx"],
+      "AppReducers/*": ["./src/reducers/*"],
+      "AppStore": ["./src/store/index.tsx"],
+      "AppStore/*": ["./src/store/*"],
+      "AppModels": ["src/models/index.ts"],
+      "AppModels/*": ["./src/models/*"],
+      "AppConfig/*": ["./app.json"]
+
+    },
+    "allowSyntheticDefaultImports": true,
+    "jsx": "react-native",
+    "lib": ["dom", "esnext"],
+    "moduleResolution": "node",
+    "noEmit": true,
+    "skipLibCheck": true,
+    "resolveJsonModule": true,
+    "strict": true,
+    "target": "ES6"
+  }
+}
