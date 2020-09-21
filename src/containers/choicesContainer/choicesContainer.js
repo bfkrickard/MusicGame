@@ -4,6 +4,10 @@ import {IconButton} from 'AppComponents'
 import { Surface, Text, Headline } from 'react-native-paper'
 import styles from './styles'
 
+/**
+ * ChoicesContainer
+ * @todo - make the IconButton text dynamic
+ */
 export const ChoicesContainer = () => {
   return (
     <View style={styles.main}>
@@ -13,7 +17,7 @@ export const ChoicesContainer = () => {
         </Headline>
         <IconButton
           active
-          text={'hello'}
+          text={'TEST'}
           onPress={() => console.log('press')}
         />
       </Surface>

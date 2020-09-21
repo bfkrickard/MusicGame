@@ -1,5 +1,5 @@
 import React from 'react'
-import {HomeContainer} from 'AppContainers'
+import {PlayContainer, LoginContainer} from 'AppContainers'
 import { Provider as PaperProvider } from 'react-native-paper'
 import {theme} from 'AppTheme'
 import {FontAwesome5} from '@expo/vector-icons'
@@ -12,7 +12,7 @@ export default function App() {
       }}
       theme={theme}
     >
-      <HomeContainer/>
+      <LoginContainer/>
     </PaperProvider>
   )
 }
