@@ -30,7 +30,7 @@ export const LoginContainer = () => {
           value={displayName}
           onChangeText={text => {
             setDisplayName(text)
-            text.length > 0 ? setButtonDisabled(false) : setButtonDisabled(true) 
+            text.trim().length > 0 ? setButtonDisabled(false) : setButtonDisabled(true) 
           }}
         />
         <Button 
