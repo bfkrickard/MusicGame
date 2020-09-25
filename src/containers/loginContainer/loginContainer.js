@@ -2,6 +2,7 @@ import React, {useState} from 'react'
 import { Text, TextInput, Title, Button } from 'react-native-paper'
 import { View } from 'react-native'
 import styles from './styles'
+import {login} from 'AppActions'
 
 export const LoginContainer = () => {
 
@@ -38,7 +39,7 @@ export const LoginContainer = () => {
           contentStyle={contentStyles.button.contentStyle}
           icon="spotify" 
           mode="contained" 
-          onPress={() => console.log('login to spotify')}
+          onPress={() => login(displayName)}
           disabled={buttonDisabled}
         >
           Login to Spotify
