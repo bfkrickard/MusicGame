@@ -1,8 +1,11 @@
 import React from 'react'
-import {PlayContainer, LoginContainer} from 'AppContainers'
+import {LoginContainer} from 'AppContainers'
 import { Provider as PaperProvider } from 'react-native-paper'
 import {theme} from 'AppTheme'
 import {FontAwesome5} from '@expo/vector-icons'
+import { Provider } from 'react-redux'
+import {store} from 'AppStore'
+
 
 export default function App() {
   return (
@@ -12,7 +15,9 @@ export default function App() {
       }}
       theme={theme}
     >
-      <LoginContainer/>
+      <Provider store={store}>
+        <LoginContainer/>
+      </Provider>
     </PaperProvider>
   )
 }
